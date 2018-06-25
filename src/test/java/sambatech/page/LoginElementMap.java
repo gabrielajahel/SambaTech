@@ -8,7 +8,7 @@ public class LoginElementMap {
 	protected WebElement inputPassword;
 	protected WebElement login;
 	@FindBy(xpath = "//*[@id=\"password_incorrect\"]")
-	protected WebElement campoObrigatorio;
+	protected static WebElement campoObrigatorio;
 	
 
 }
