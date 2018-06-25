@@ -1,6 +1,7 @@
 package sambatech.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import sambatech.commons.TestRule;
@@ -11,6 +12,8 @@ public class InicialPage {
 	public InicialPage() {
 		PageFactory.initElements(TestRule.getDriver(), this);
 	}
+	
+	public static  WebDriver driver;
 
 	 public static boolean verificaPagina() {
 			
@@ -22,7 +25,6 @@ public class InicialPage {
 	    		e.printStackTrace();
 	    	}
 		 
-		   TestRule.getDriver().switchTo().frame("wain-warpper");
 		 
 		  int intQuantidadeItensEncontrados = TestRule.getDriver().findElements(By.id("navbar-project-name")).size();
 		    if (intQuantidadeItensEncontrados > 0) {

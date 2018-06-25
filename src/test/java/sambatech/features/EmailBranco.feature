@@ -23,5 +23,5 @@ Feature: Teste de logar no sistema com email em branco
   @tag1
   Scenario: Tentativa de logar no Sistema com Email em Branco
     Given Informei email em branco e senha valida
-    When Cliquei no botao Entrar
+    When Cliquei no botao Logar
     Then O sistema devera apresentar uma mensagem informando que o campo email é obrigatorio

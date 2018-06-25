@@ -21,7 +21,18 @@ public class LoginBrancoPage extends LoginElementMap {
 		login.click();		
 	}
 	
+
+	 
+	
 	public boolean verificaMensagem() {
+		 try {
+	    		synchronized(TestRule.getDriver()) {
+	    			TestRule.getDriver().wait(9000);
+	    		}
+	    	} catch (InterruptedException e) {
+	    		e.printStackTrace();
+	    	}
+		 
 		String strMensagemExibida = campoObrigatorio.getText();
 		if (strMensagemExibida.contains("Campo Obrigatorio")) {
 			return true;

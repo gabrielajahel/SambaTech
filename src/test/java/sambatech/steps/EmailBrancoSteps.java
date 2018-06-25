@@ -15,7 +15,7 @@ public class EmailBrancoSteps {
     	loginBrancoPage.informarEmailSenha ();
     	
     }
-    @When ("Cliquei no botao Entrar")
+    @When ("Cliquei no botao Logar")
     public void clicarEntrar() {
     	LoginBrancoPage loginInvalidoPage = new LoginBrancoPage();
     	loginInvalidoPage.clicarEntrar ();
