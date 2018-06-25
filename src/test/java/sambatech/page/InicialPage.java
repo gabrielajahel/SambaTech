@@ -22,6 +22,7 @@ public class InicialPage {
 	    		e.printStackTrace();
 	    	}
 		 
+		   TestRule.getDriver().switchTo().frame("wain-warpper");
 		 
 		  int intQuantidadeItensEncontrados = TestRule.getDriver().findElements(By.id("navbar-project-name")).size();
 		    if (intQuantidadeItensEncontrados > 0) {
